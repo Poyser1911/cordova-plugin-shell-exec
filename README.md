@@ -41,11 +41,11 @@ window.ShellExec.exec(cmd, (res) =>{
 })
 ```
 ### Alerts Result Preview
-![alt text](http://poyser.pw/git/images/exitStatus.png"exitStatus")
+![alt text](http://poyser.pw/git/images/exitStatus.png "exitStatus")
 
 
 
-![alt text](http://poyser.pw/git/images/output.png"output")
+![alt text](http://poyser.pw/git/images/output.png "output")
 
 
 ```
