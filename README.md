@@ -3,7 +3,7 @@
 Apache Cordova Plugin to Execute Root Commands Android in Smartphone's Operating System Shell.
 
 
-This is a MODIFIED version of [https://github.com/petervojtek/cordova-plugin-shell-exec](https://github.com/petervojtek/cordova-plugin-shell-exec) to be complatible with all commands formats without using arrays.__ See `Useage` and `Examples`__.
+This is a MODIFIED version of [https://github.com/petervojtek/cordova-plugin-shell-exec](https://github.com/petervojtek/cordova-plugin-shell-exec) to be complatible with all commands formats without using arrays. <br/> See `Useage` and `Examples`__.
 Note: All Commands Excutes in Root Mode at the moment, this can be modified later.
 
 
@@ -46,6 +46,10 @@ window.ShellExec.exec(cmd, (res) =>{
 
 
 ![alt text](http://poyser.pw/git/images/output.png "output")
+
+### Alerts Result IFError Preview
+![alt text](http://poyser.pw/git/images/error.png "output")
+
 
 
 ```
