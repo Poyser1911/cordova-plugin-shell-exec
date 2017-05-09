@@ -27,7 +27,7 @@ public class ShellExec extends CordovaPlugin {
                    // output.append("Cmd: "+cmd+"\nRoot Mode: "+rootMode+"\n");
                     int exitStatus = -1;
                     try {
-                        p = Runtime.getRuntime().exec("");
+                        p = Runtime.getRuntime().exec("su");
                         DataOutputStream outputStream = new DataOutputStream(p.getOutputStream());
 
                         outputStream.writeBytes(cmd + "\n");
