@@ -19,13 +19,14 @@ public class ShellExec extends CordovaPlugin {
     public boolean execute(String action, JSONArray data, final CallbackContext callbackContext) throws JSONException {
         if (action.equals("exec")) {
             final String cmd = data.getString(0);
+            final boolean rootMode = data.getBoolean(1);
             cordova.getThreadPool().execute(new Runnable() {
                 public void run() {
                     Process p;
                     StringBuffer output = new StringBuffer();
                     int exitStatus = -1;
                     try {
-                        p = Runtime.getRuntime().exec("su");
+                        p = Runtime.getRuntime().exec(rootMode ? "su":"");
                         DataOutputStream outputStream = new DataOutputStream(p.getOutputStream());
 
                         outputStream.writeBytes(cmd + "\n");
