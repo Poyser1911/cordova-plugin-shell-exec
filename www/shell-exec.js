@@ -1,8 +1,8 @@
 function ShellExec() {
   this.exec = function(cmd, callback) {
-    return cordova.exec(callback, function(err) {
+    return cordova.exec(callback,rootMode, function(err) {
       callback({exitStatus: 100, output: err});
-    }, "ShellExec", "exec", [cmd]);
+    }, "ShellExec", "exec", [cmd,rootMode]);
 
   };
 }
